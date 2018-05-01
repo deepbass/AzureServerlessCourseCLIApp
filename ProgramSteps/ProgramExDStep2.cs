@@ -24,7 +24,7 @@ namespace PersonalFinanceCLIApp
                 Console.WriteLine("Enter in what you spent today!");
                 var transactionAmount = decimal.Parse(Console.ReadLine());
 
-                // Borrowing the Transaction definition from our other project
+                // Creating a Transaction object from user input
                 var transaction = new Transaction { Amount = transactionAmount, ExecutionTime = DateTime.Now };
 
                 // Check if the csv exists, and if not prepopulate it with headers.
